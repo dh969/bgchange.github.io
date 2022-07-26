@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<style>
+    #div2{
+        
+        height:730px;
+        width:1700px;
+
+    }
+    #div1{
+        height:50px;
+        width:1700px;
+       
+    }
+    #text1{
+      width:500px;
+      height:500px;
+    
+        display: block;
+   
+    border:10px solid black;
+    position:absolute;
+   top:150px;
+   left:600px;
+    
+   
+}
+</style>
+</head>
+<body>
+    <div id="div1">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <button type="submit" class="btn btn-primary" id="blue" onClick="blue()">Blue</button>
+            </li>
+            <li class="nav-item">
+                <button type="submit" class="btn btn-danger" id="red" onClick="red()">Red</button>
+            </li>
+            <li class="nav-item">
+                <button type="submit" class="btn btn-warning" id="yellow" onClick="black()">Black</button>
+            </li>
+            <li class="nav-item">
+                <button type="submit" class="btn btn-success" id="green" onClick="green()">green</button>
+            </li>
+          </ul>
+    </div>
+    <div id="div2">
+        <textarea id="text1"></textarea>
+    </div>
+    <script>
+        function blue(){
+             
+            const element = document.querySelector('#text1');
+element.style.backgroundColor = 'blue';
+const element1 = document.querySelector('#div2');
+element1.style.backgroundColor = 'blue';
+element.style.color ='pink';
+element.style.borderColor="white";
+        }
+        function black(){
+             
+             const element = document.querySelector('#text1');
+ element.style.backgroundColor = 'black';
+ const element1 = document.querySelector('#div2');
+ element1.style.backgroundColor = 'black';
+ element.style.color ='white';
+ element.style.borderColor="white";
+         }
+         function green(){
+             
+             const element = document.querySelector('#text1');
+ element.style.backgroundColor = 'green';
+ const element1 = document.querySelector('#div2');
+ element1.style.backgroundColor = 'green';
+ element.style.color ='white';
+ element.style.borderColor="red";
+         }
+         function red(){
+             
+             const element = document.querySelector('#text1');
+ element.style.backgroundColor = 'red';
+ const element1 = document.querySelector('#div2');
+ element1.style.backgroundColor = 'red';
+ element.style.color ='white';
+ element.style.borderColor="white";
+         }
+    </script>
+</body>
+</html>
